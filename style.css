@@ -1,0 +1,313 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    background-color:#142585;
+    display: flex;
+    justify-content: space-between;
+	width: 100%;
+}
+
+.logo {
+    max-width: 70px;
+}
+ 
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.stranice {
+    list-style: none;
+    display: flex;
+}
+
+.stranice li{
+    margin-right: 10px;
+}
+
+.container-pocetna{
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.container-about{
+    text-align: center;
+}
+
+.container-pocetna h1{
+    font-size: 5em;
+}
+
+.container-pocetna p{
+    padding-bottom: 15px;
+}
+
+h1{
+    color: #c73e11;
+} 
+
+h2{
+    font-size: xx-large;
+    color: #142585;
+}
+
+h3{
+    font-size: x-large;
+    color: #142585;
+}
+
+p, label{
+    color: grey;
+    font-size: large;
+    padding-right: 20px;
+}
+
+footer{
+	color: grey;
+}
+
+.forma{
+	padding-left: 35%;
+	padding-right: 35%;
+	padding-top: 50px;
+}
+
+label, input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:  #142585;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.svetlija-boja-dugmeta, #svetlija-boja-dugmeta{
+    background-color: #a7b2bd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.row-padding{
+    display: flex;
+}
+
+.pasus {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+  }
+
+
+footer{
+    text-align: center;
+}
+
+.hamburger {
+	z-index: 3;
+	cursor: -moz-grabbing;
+	display: none;
+}
+
+.menu {
+	margin: 0;
+	position: fixed;
+	transform: translateX(-100%);
+	transition: transform 0.1s;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	background: #142585;
+	list-style: none;
+	font-size: xx-large;
+	width: 50%;
+}
+
+.menu li{
+	padding-top: 20px;
+}
+#popupWindow {
+	position: fixed;
+	justify-content: center;
+	width: 300px;
+	height: 150px;
+	background: white;
+	border: 1px solid rgb(117, 115, 115);
+	padding: 10px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+    text-align: center;
+  } 
+
+ #popupWindow h1{
+	padding-top: 20px;
+ }
+
+  #closePopupButton {
+	background-color: #c73e11;
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+@media (max-width: 768px) {
+	footer{
+        padding-top: 200px;
+    }
+
+	.navbar {
+		width: 100%;
+	}
+
+	main{
+		height: 150vh;
+	}
+
+	.hamburger {
+		z-index: 3;
+		display: block;
+	}
+
+	.bar{
+		display: block;
+    	width: 25px;
+    	height: 3px;
+    	background-color: white;
+    	margin: 4px 0;
+	}
+
+	.stranice {
+		flex-direction: column;
+		display: none;
+		list-style: none;
+	}
+
+	.logo {
+		width: fit-content;
+	}
+
+	.pasus {
+		width: 100%;
+		flex: 1;
+		padding: 10px;
+		margin: 5px;
+	}
+
+	footer {
+        margin-top: 500px;
+    }
+
+	.row-padding {
+		flex-direction: column;
+	}
+
+	.forma{
+    	margin: 0;
+    	padding: 0;
+    	justify-content: center;
+    	height: 100vh;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	input{
+		max-width: 100%;
+	}
+
+	.container-pocetna h1 {
+		font-size: 3em;
+	}
+
+	a {
+		font-size: smaller;
+	}
+
+	.container-content {
+		padding: 20px;
+	}
+
+	#popupWindow {
+		font-size: smaller;
+		position: fixed;
+		justify-content: center;
+		width: 250px;
+		height: 150px;
+		max-width: 80%;
+		background: white;
+		border: 1px solid rgb(117, 115, 115);
+		padding: 10px;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		display: none;
+	  } 
+}
+
+.showMenu {
+	transform: translateY(0);
+}
+
+.closeButton {
+	display: none;
+	z-index: 3;
+	cursor: -moz-grabbing;
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+	height: 70px;
+}
+
+.hideHamburger, .hideCloseButton {
+	display: none;
+}
+
+.showCloseButton {
+	display: block;
+}
+
+#porukaAlert {
+	font-size: xx-large;
+}
+
+.error-message {
+	font-size: smaller;
+	color: #c73e11;
+}

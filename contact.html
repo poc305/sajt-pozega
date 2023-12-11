@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Kontakt</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<img
+					class="logo"
+					src="images/logo-pozega.png"
+					alt="Logo"
+					class="logo"
+				/>
+				<ul class="stranice">
+					<li><a href="index.html">POČETNA</a></li>
+					<li><a href="about.html">O POŽEGI</a></li>
+					<li><a href="contact.html">KONTAKT</a></li>
+				</ul>
+
+				<ul class="menu">
+					<li><a href="index.html">POČETNA</a></li>
+					<li><a href="about.html">O POŽEGI</a></li>
+					<li><a href="contact.html">KONTAKT</a></li>
+				</ul>
+
+				<button class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+				<button class="closeButton">
+					<span class="close">&times;</span>
+				</button>
+			</nav>
+		</header>
+		<div class="forma">
+			<main>
+				<div id="popupWindow">
+					<h1 id="naslov"></h1>
+					<button id="closePopupButton">&times;</button>
+					<div id="buttonContainer"></div>
+				</div>
+				<h2>Kontakt</h2>
+				<p>
+					Opštinska uprava Požega <br />
+					Trg Slobode 9 <br />31210 Požega, Srbija <br />Telefoni centrala:
+					031/ 3816-401, 3816-257, 3816-468 <br />Faks: 031/ 811-287
+					<br />opstina@pozega.ls.gov.rs
+				</p>
+
+				<form
+					action="https://formspree.io/f/myyqvazj"
+					method="POST"
+					id="formaBrate"
+				>
+					<label for="ime">Vaše ime:</label>
+					<input
+						type="text"
+						id="ime"
+						name="ime"
+						size="50"
+						autocomplete="off"
+					/>
+					<p id="imeError" class="error-message"></p>
+					<label for="email">Email adresa:</label>
+					<input type="text" id="email" name="email" size="50" />
+					<p id="emailError" class="error-message"></p>
+					<label for="naslovInput">Naslov:</label>
+					<input
+						type="text"
+						id="naslovInput"
+						name="naslovInput"
+						size="50"
+					/>
+					<p id="naslovError" class="error-message"></p>
+					<label for="poruka">Poruka:</label>
+					<input type="poruka" id="poruka" name="poruka" size="50" />
+					<p id="porukaError" class="error-message"></p>
+					<button type="submit" id="submitButton">Pošalji</button>
+					
+				</form>
+				<p id="porukaAlert"></p>
+			</main>
+		</div>
+		<footer>
+			<p class="footer"></p>
+		</footer>
+
+		<script src="./contact.js"></script>
+	</body>
+</html>
